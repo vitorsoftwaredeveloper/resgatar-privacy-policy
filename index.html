@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Política de Privacidade — Resgatar</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #F6F1EB;
+      --card: #FFFFFF;
+      --primary: #6B4F3A;
+      --text: #3E2F23;
+      --muted: #8C7A6B;
+      --border: #DED6CC;
+      --radius: 14px;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      padding: 0 16px 64px;
+    }
+
+    header {
+      background: var(--primary);
+      color: #fff;
+      text-align: center;
+      padding: 48px 24px 40px;
+      margin: 0 -16px 40px;
+    }
+
+    header .logo {
+      font-size: 13px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      opacity: 0.75;
+      margin-bottom: 12px;
+    }
+
+    header h1 {
+      font-size: 28px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    header p {
+      font-size: 14px;
+      opacity: 0.75;
+    }
+
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    .card {
+      background: var(--card);
+      border-radius: var(--radius);
+      padding: 28px 32px;
+      margin-bottom: 20px;
+      border: 1px solid var(--border);
+    }
+
+    .card h2 {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .card h2 .icon {
+      width: 28px;
+      height: 28px;
+      border-radius: 8px;
+      background: #F6F1EB;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 15px;
+      flex-shrink: 0;
+    }
+
+    .card p {
+      font-size: 14px;
+      color: var(--text);
+      margin-bottom: 10px;
+    }
+
+    .card p:last-child { margin-bottom: 0; }
+
+    .card ul {
+      margin: 10px 0 10px 20px;
+      font-size: 14px;
+    }
+
+    .card ul li { margin-bottom: 6px; }
+
+    .tag-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 12px;
+    }
+
+    .tag {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 4px 12px;
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    .tag.yes {
+      background: #E6F4EA;
+      border-color: #A8D5B5;
+      color: #1E7F43;
+    }
+
+    .tag.no {
+      background: #FFF0F0;
+      border-color: #F5C2C2;
+      color: #C0392B;
+    }
+
+    .contact-box {
+      background: var(--primary);
+      color: #fff;
+      border-radius: var(--radius);
+      padding: 28px 32px;
+      text-align: center;
+    }
+
+    .contact-box p {
+      font-size: 14px;
+      opacity: 0.85;
+      margin-bottom: 12px;
+    }
+
+    .contact-box a {
+      color: #fff;
+      font-weight: 600;
+      font-size: 15px;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(255,255,255,0.4);
+      padding-bottom: 2px;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    @media (max-width: 520px) {
+      .card { padding: 20px 18px; }
+      header { padding: 36px 18px 32px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">Resgatar</div>
+  <h1>Política de Privacidade</h1>
+  <p>Última atualização: Maio de 2025</p>
+</header>
+
+<div class="container">
+
+  <div class="card">
+    <h2><span class="icon">✝</span> Sobre o aplicativo</h2>
+    <p>
+      O <strong>Resgatar</strong> é um aplicativo voltado à comunidade católica, oferecendo recursos como
+      leituras da liturgia diária, gestão de contribuições financeiras e comunicação interna entre
+      membros de paróquias e grupos religiosos.
+    </p>
+    <p>
+      Esta Política de Privacidade descreve como coletamos, usamos e protegemos as informações dos
+      usuários do aplicativo Resgatar (<code>com.vitorsoftwaredeveloper.resgatar_app</code>).
+    </p>
+  </div>
+
+  <div class="card">
+    <h2><span class="icon">📋</span> Dados que coletamos</h2>
+    <p>Coletamos apenas as informações necessárias para o funcionamento do aplicativo:</p>
+    <ul>
+      <li><strong>Nome e sobrenome</strong> — para identificação dentro da comunidade</li>
+      <li><strong>Endereço de e-mail</strong> — para autenticação e recuperação de conta</li>
+      <li><strong>Senha</strong> — armazenada de forma criptografada via AWS Cognito</li>
+      <li><strong>Dados de contribuições financeiras</strong> — valor e status de pagamentos PIX registrados no app</li>
+    </ul>
+    <p>
+      Não coletamos dados de localização, contatos, câmera, microfone ou qualquer outra informação
+      sensível do dispositivo.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2><span class="icon">🔒</span> Como usamos seus dados</h2>
+    <p>Os dados coletados são utilizados exclusivamente para:</p>
+    <ul>
+      <li>Autenticar e identificar o usuário dentro do aplicativo</li>
+      <li>Exibir o nome do usuário na interface do app</li>
+      <li>Registrar e consultar o histórico de contribuições financeiras</li>
+      <li>Enviar notificações locais de lembrete de contribuição mensal</li>
+    </ul>
+    <p>
+      <strong>Não vendemos, alugamos ou compartilhamos seus dados com terceiros</strong> para fins
+      comerciais ou publicitários.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2><span class="icon">☁</span> Armazenamento e segurança</h2>
+    <p>
+      As informações de conta são gerenciadas pela <strong>AWS Cognito</strong>, serviço de
+      autenticação da Amazon Web Services, que oferece criptografia de dados em trânsito (TLS) e
+      em repouso.
+    </p>
+    <p>
+      Os dados de contribuições são armazenados em servidores seguros com acesso restrito. Nenhuma
+      senha é armazenada em texto puro.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2><span class="icon">📖</span> Liturgia diária</h2>
+    <p>
+      O conteúdo da liturgia diária é obtido de uma API pública de leituras católicas e não está
+      vinculado à sua conta ou dados pessoais. Nenhuma informação pessoal é enviada ao obter
+      essas leituras.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2><span class="icon">💳</span> Pagamentos PIX</h2>
+    <p>
+      Os pagamentos PIX são processados pela infraestrutura financeira integrada ao app. O aplicativo
+      <strong>não armazena dados bancários, chaves PIX pessoais ou informações de cartão</strong>.
+      O QR Code de cobrança é gerado por nossa API e utilizado apenas para a transação em questão.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2><span class="icon">🔔</span> Notificações</h2>
+    <p>
+      O app pode enviar notificações locais (geradas no próprio dispositivo) para lembrar sobre
+      contribuições mensais. Essas notificações não coletam dados e podem ser desativadas nas
+      configurações do seu dispositivo a qualquer momento.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2><span class="icon">👶</span> Crianças</h2>
+    <p>
+      O Resgatar não é direcionado a crianças menores de 13 anos e não coleta intencionalmente
+      informações de menores. Se identificarmos que coletamos dados de um menor sem consentimento
+      dos responsáveis, removeremos essas informações imediatamente.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2><span class="icon">⚙</span> Seus direitos</h2>
+    <p>Você tem o direito de, a qualquer momento:</p>
+    <ul>
+      <li>Solicitar acesso aos seus dados pessoais</li>
+      <li>Corrigir informações incorretas</li>
+      <li>Solicitar a exclusão da sua conta e dados associados</li>
+      <li>Revogar permissões de notificação nas configurações do dispositivo</li>
+    </ul>
+    <p>Para exercer qualquer um desses direitos, entre em contato conosco pelo e-mail abaixo.</p>
+  </div>
+
+  <div class="card">
+    <h2><span class="icon">📡</span> Resumo de dados</h2>
+    <div class="tag-row">
+      <span class="tag yes">✓ Dados de conta (nome, e-mail)</span>
+      <span class="tag yes">✓ Contribuições financeiras</span>
+      <span class="tag no">✗ Localização</span>
+      <span class="tag no">✗ Contatos</span>
+      <span class="tag no">✗ Câmera / microfone</span>
+      <span class="tag no">✗ Dados bancários</span>
+      <span class="tag no">✗ Anúncios / rastreamento</span>
+      <span class="tag no">✗ Venda de dados</span>
+    </div>
+  </div>
+
+  <div class="contact-box">
+    <p>Dúvidas sobre privacidade? Entre em contato:</p>
+    <a href="mailto:vitorsoaresf@gmail.com">vitorsoaresf@gmail.com</a>
+  </div>
+
+</div>
+
+<footer>
+  <p>© 2025 Resgatar · Todos os direitos reservados</p>
+  <p style="margin-top:6px;">Este documento está em conformidade com a Lei Geral de Proteção de Dados (LGPD — Lei nº 13.709/2018).</p>
+</footer>
+
+</body>
+</html>
